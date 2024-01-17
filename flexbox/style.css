@@ -1,0 +1,31 @@
+.parent-container {
+    background-color: khaki;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.image-class {
+    width: 100px;
+    height: auto;
+}
+
+
+@media (min-width: 400px) {
+    .parent-container {
+        background-color: forestgreen;
+    }
+}
+
+
+@media (min-width: 850px) {
+    .parent-container {
+        background-color: deeppink;
+    }
+}
