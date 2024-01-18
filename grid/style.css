@@ -1,0 +1,55 @@
+.wrapper {
+    background-color: aquamarine;
+    height: 50vh;
+    display: grid;
+    grid-template-areas: 
+    "two three  ."
+    ".  one     ."
+    "four   .   five"
+    ;
+    margin-bottom: 10px;
+}
+
+.flex {
+    background-color: cornflowerblue;
+    height: 40vh;
+}
+
+.one {
+    grid-area: one;
+    background-color: antiquewhite;
+}
+
+.two {
+    grid-area: two;
+    background-color: goldenrod;
+    flex-grow: 1;
+}
+
+.three {
+    grid-area: three;
+    background-color: lightsalmon;
+    flex-grow: 1;
+}
+
+.four {
+    grid-area: four;
+    background-color: tomato;
+}
+
+.five {
+    grid-area: five;
+    background-color: thistle;
+}
+ 
+.emnpty {
+    flex-grow: 1;
+}
+
+.container1 {
+    display: flex;
+}
+
+.container2 {
+    display: flex;
+}
