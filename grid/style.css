@@ -1,55 +1,63 @@
-.wrapper {
-    background-color: aquamarine;
-    height: 50vh;
+body {
+    overflow-x: hidden;
+    display: grid;
+}
+
+header {
+    background-color: wheat;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#icon {
+    height: 50px;
+    width: auto;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+main {
     display: grid;
     grid-template-areas: 
-    "two three  ."
-    ".  one     ."
-    "four   .   five"
+    "content    content     sidebar"
     ;
+}
+
+.content {
+    grid-area: content;
+    margin: 10px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    margin: 10px;
+}
+
+.article {
+    margin-bottom: 25px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
     margin-bottom: 10px;
 }
 
-.flex {
-    background-color: cornflowerblue;
-    height: 40vh;
+.links > a {
+    text-decoration: none;
+    color:coral;
+    border: 2px solid cornflowerblue;
+    padding: 5px;
+    border-radius: 15px;
 }
 
-.one {
-    grid-area: one;
-    background-color: antiquewhite;
-}
-
-.two {
-    grid-area: two;
-    background-color: goldenrod;
-    flex-grow: 1;
-}
-
-.three {
-    grid-area: three;
-    background-color: lightsalmon;
-    flex-grow: 1;
-}
-
-.four {
-    grid-area: four;
-    background-color: tomato;
-}
-
-.five {
-    grid-area: five;
-    background-color: thistle;
-}
- 
-.emnpty {
-    flex-grow: 1;
-}
-
-.container1 {
-    display: flex;
-}
-
-.container2 {
-    display: flex;
+.links > a:hover {
+    background-color: aquamarine;
 }
